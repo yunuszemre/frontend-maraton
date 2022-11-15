@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+
+        h1 {
+            background-color: #780000;
+            color: aliceblue;
+        }
+
+        .header {
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .logo {
+            display: inline-block;
+            height: 56px;
+            flex: 20%;
+            padding: 5px 0 0 5px;
+            background-color: #007800;
+            border: 1px solid #007800;
+        }
+
+        .nav {
+            flex: 80%;
+            display: flex;
+            flex-direction: row;
+            background-color: #007800;
+            line-height: 40px;
+            justify-content: flex-end;
+        }
+
+        .nav-link {
+
+            color: aliceblue;
+        }
+
+        .nav-link:hover {
+            opacity: 80%;
+            /*background-color: #780000;*/
+        }
+
+        .body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .side-left {
+            flex: 20%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #333;
+            background-color: olivedrab;
+        }
+
+        .left {
+            flex: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side-right {
+            flex: 20%;
+            flex-direction: column;
+            display: flex;
+            border: 1px solid #333;
+
+        }
+
+        .main {
+            flex: 60%;
+            flex-direction: column;
+            display: flex;
+            border: 1px solid red;
+
+        }
+
+        ul {
+            display: inline-block;
+            padding: 0;
+        }
+
+        ul>.left-nav-li {
+            background-color: aliceblue;
+            /*display: block;*/
+            height: 40px;
+            text-align: start;
+            line-height: 30px;
+            list-style: none;
+            padding: 5px;
+        }
+
+        .left-nav-li:hover {
+            background-color: #780000;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        .left-nav-li:focus {
+            border-radius: 5px;
+        }
+        .logo-img{
+            display: block;
+           
+            height: 50px;
+        }
+
+        .body-element {
+            flex: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img class="logo-img" src="videosablon-02.png" />
+        </div>
+
+        <div class="nav">
+            <a class="nav-link" href="#">NAV</a>
+            <a class="nav-link" href="#">NAV</a>
+            <a class="nav-link" href="#">NAV</a>
+            <a class="nav-link" href="#">NAV</a>
+            <a class="nav-link" href="#">NAV</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="side-left">
+            <div class="left">
+                <ul>
+                    <li class="left-nav-li">List Item</li>
+                    <li class="left-nav-li">List Item</li>
+                    <li class="left-nav-li">List Item</li>
+                    <li class="left-nav-li">List Item</li>
+                    <li class="left-nav-li">List Item</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="body-element">
+                <h1>Body Element</h1>
+            </div>
+        </div>
+        <div class="side-right">
+            <div style="height: 300px;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
